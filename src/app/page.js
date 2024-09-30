@@ -181,7 +181,7 @@ export default function Home() {
   const [showDownloadButton, setShowDownloadButton] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [activeAccount, setActiveAccount] = useState("giottus");
-  const [accountsData, setAccountsData] = useState([]);
+  // const [accountsData, setAccountsData] = useState([]);
   const [showInput, setShowInput] = useState(false);
 
   useEffect(() => {
