@@ -374,7 +374,7 @@ export default function Home() {
       link.parentNode.removeChild(link);
       setShowDownloadButton(false);
       setShowInput(false);
-      getGraphData();
+      // getGraphData();
     } catch (error) {
       console.error("Error downloading the file:", error);
     }
