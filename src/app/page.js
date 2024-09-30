@@ -181,7 +181,7 @@ export default function Home() {
   const [showDownloadButton, setShowDownloadButton] = useState(false);
   const [uploadProgress, setUploadProgress] = useState(0);
   const [activeAccount, setActiveAccount] = useState("giottus");
-  // const [accountsData, setAccountsData] = useState([]);
+  const [accountsData, setAccountsData] = useState([]);
   const [showInput, setShowInput] = useState(false);
 
   useEffect(() => {
@@ -321,7 +321,7 @@ export default function Home() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/uploadfiles",
+        "https://taxation-engine.onrender.com/uploadfiles",
         formData,
         {
           headers: {
@@ -355,7 +355,7 @@ export default function Home() {
   const downloadPLS = async () => {
     try {
       const response = await axios.post(
-        `http://127.0.0.1:8000/download_pls/${userId}`,
+        `https://taxation-engine.onrender.com/download_pls/${userId}`,
         {},
         {
           headers: {
@@ -374,7 +374,7 @@ export default function Home() {
       link.parentNode.removeChild(link);
       setShowDownloadButton(false);
       setShowInput(false);
-      // getGraphData();
+      getGraphData();
     } catch (error) {
       console.error("Error downloading the file:", error);
     }
