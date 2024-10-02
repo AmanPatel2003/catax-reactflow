@@ -9,12 +9,12 @@ import Select from "react-select";
 const options = [
   { value: "giottus", label: "Giottus" },
   { value: "koinbx", label: "Koinbx" },
-  { value: "BITBNS", label: "Bitbns" },
-  { value: "Buyucoin", label: "Buyucoin" },
-  { value: "CoinSwitch", label: "Coinswitch" },
-  { value: "CoinSwitch Pro", label: "Coinswitch Pro" },
-  { value: "Kraken", label: "Kraken" },
-  { value: "Unocoin", label: "Unocoin" },
+  { value: "bitbns", label: "Bitbns" },
+  { value: "buyucoin", label: "Buyucoin" },
+  { value: "coinswitch", label: "Coinswitch" },
+  { value: "coinswitch_pro", label: "Coinswitch Pro" },
+  { value: "kraken", label: "Kraken" },
+  { value: "unocoin", label: "Unocoin" },
   { value: "zebpay", label: "Zebpay" },
 ];
 
